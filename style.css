@@ -45,6 +45,7 @@ body {
 
 .page {
     width: min(1110px, 91.46%);
+    margin-block-end: 5rem;
 }
 
 .page-header {
@@ -61,6 +62,13 @@ nav {
     display: flex;
     list-style-type: none;
     padding: 0;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus-visible {
+    cursor: pointer;
+    color: var(--clr-primary-450);
 }
 
 .logo {
@@ -92,6 +100,13 @@ nav {
     text-align: center;
 }
 
+.main-article-button:hover,
+.main-article-button:active,
+.main-article-button:focus-visible {
+    background-color: var(--clr-neutral-800);
+    cursor: pointer;
+}
+
 aside {
     margin-block: 1.8125rem;
     background-color: var(--clr-neutral-800);
@@ -121,6 +136,53 @@ aside {
     font-size: 1.25rem;
 }
 
+.aside-article-title:hover,
+.aside-article-title:focus-visible,
+.aside-article-title:active {
+    cursor: pointer;
+    color: var(--clr-primary-400);
+}
+
 .aside-article-description {
     line-height: 2;
+}
+
+.sub-article {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    column-gap: 1.5625rem;
+    color: var(--clr-neutral-600);
+}
+
+.sub-article:nth-of-type(2) {
+    margin-block: 2rem;
+}
+
+.sub-article img {
+    grid-row: 1 / 4;
+}
+
+.sub-article-number,
+.sub-article-title {
+    font-weight: var(--fw-bold);
+}
+
+.sub-article-number {
+    font-size: 1.75rem;
+}
+
+.sub-article-title {
+    color: var(--clr-neutral-800);
+    font-size: 1.125rem;
+}
+
+.sub-article-title:hover,
+.sub-article-title:focus-visible,
+.sub-article-title:active {
+    cursor: pointer;
+    color: var(--clr-primary-450);
+}
+
+.sub-article-description {
+    line-height: 1.6;
 }
