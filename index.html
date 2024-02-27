@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | News homepage</title>
-
+  <script type="module" src="main.js"></script>
 </head>
 <body>
 
@@ -18,14 +18,19 @@
       <div class="logo">
         <img src="./assets/images/logo.svg" alt="Logo for site">
       </div>
+      <button class="mobile-nav-toggle" 
+      aria-controls="nav-links" aria-expanded="false">
+        <span class="visually-hidden">Menu</span>
+      </button>
       <nav>
-        <ul class="nav-links">
+        <ul id="nav-links" data-visible="false" class="nav-links">
           <li class="nav-link">Home</li>
           <li class="nav-link">New</li>
           <li class="nav-link">Popular</li>
           <li class="nav-link">Trending</li>
           <li class="nav-link">Categories</li>
         </ul>
+        <svg class="nav-icon-open" width="40" height="17" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg>
       </nav>
     </header>
     <main>
@@ -78,6 +83,7 @@
         <p class="sub-article-description">How the pandemic has sparked fresh opportunities.</p>
       </article>
     </section>
+    <div class="overlay"></div>
   </div>
   
 
